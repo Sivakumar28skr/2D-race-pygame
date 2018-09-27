@@ -1,9 +1,10 @@
 import pygame,time,random,shelve
 from pygame.locals import*
 
+
 pygame.init()
 
-
+pygame.mixer.music.load('Cars Life is a Highway.mp3')
 display_width= 450
 display_hieght= 600
 
@@ -178,7 +179,7 @@ def game_loop():
         l=l-1
         pygame.display.update()
         time.sleep(1)
-    
+    pygame.mixer.music.play()
     global pause
     liney1=0
     liney2=170
